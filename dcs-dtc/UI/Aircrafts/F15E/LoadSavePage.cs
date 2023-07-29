@@ -71,6 +71,11 @@ namespace DTC.UI.Aircrafts.F15E
                     chkLoadDisplays.Enabled = true;
                     enableLoad = true;
                 }
+                if (_configToLoad.Radios != null)
+                {
+                    chkLoadRadios.Enabled = true;
+                    enableLoad = true;
+                }
                 if (_configToLoad.Misc != null)
                 {
                     chkLoadMisc.Enabled = true;
@@ -108,6 +113,15 @@ namespace DTC.UI.Aircrafts.F15E
                 load = true;
             }
 
+            if (!chkLoadRadios.Checked)
+            {
+                cfg.Radios = null;
+            }
+            else
+            {
+                load = true;
+            }
+
             if (!chkLoadMisc.Checked)
             {
                 cfg.Misc = null;
@@ -136,6 +150,10 @@ namespace DTC.UI.Aircrafts.F15E
             {
                 cfg.Displays = null;
             }
+            if (!chkSaveRadios.Checked)
+            {
+                cfg.Radios = null;
+            }
             if (!chkSaveMisc.Checked)
             {
                 cfg.Misc = null;
@@ -158,6 +176,7 @@ namespace DTC.UI.Aircrafts.F15E
         {
             chkLoadWaypoints.Enabled = false;
             chkLoadDisplays.Enabled = false;
+            chkLoadRadios.Enabled = false;
             chkLoadMisc.Enabled = false;
             btnLoadApply.Enabled = false;
         }
