@@ -33,6 +33,7 @@ namespace DTC.UI.Aircrafts.F15E
             }
             else if (optFile.Checked)
             {
+                openFileDlg.ShowHelp = true;
                 if (openFileDlg.ShowDialog() == DialogResult.OK)
                 {
                     var file = FileStorage.LoadFile(openFileDlg.FileName);
