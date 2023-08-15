@@ -1,6 +1,7 @@
-﻿using DTC.Models.AH64.Waypoints;
+﻿using DTC.Models.Base;
 using DTC.Models.DCS;
 using DTC.Models.Presets;
+using DTC.Models.AH64.Waypoints;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.IO;
 using System.IO.Compression;
 using System.Threading;
 
-namespace DTC.Models.Base
+namespace DTC.Utilities
 {
 	public class FileStorage
 	{
