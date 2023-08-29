@@ -35,13 +35,13 @@ namespace DTC.UI.Aircrafts.F15E
             this.saveFileDlg = new System.Windows.Forms.SaveFileDialog();
             this.optFile = new System.Windows.Forms.RadioButton();
             this.optClipboard = new System.Windows.Forms.RadioButton();
-            this.grpLoad = new DTC.UI.Controls.DTCGroupBox();
+            this.grpLoad = new DTC.UI.Base.Controls.DTCGroupBox();
             this.chkLoadMisc = new System.Windows.Forms.CheckBox();
             this.chkLoadDisplays = new System.Windows.Forms.CheckBox();
             this.btnLoadApply = new DTC.UI.Base.Controls.DTCButton();
             this.btnLoad = new DTC.UI.Base.Controls.DTCButton();
             this.chkLoadWaypoints = new System.Windows.Forms.CheckBox();
-            this.grpSave = new DTC.UI.Controls.DTCGroupBox();
+            this.grpSave = new DTC.UI.Base.Controls.DTCGroupBox();
             this.chkSaveMisc = new System.Windows.Forms.CheckBox();
             this.chkSaveDisplays = new System.Windows.Forms.CheckBox();
             this.btnSave = new DTC.UI.Base.Controls.DTCButton();
