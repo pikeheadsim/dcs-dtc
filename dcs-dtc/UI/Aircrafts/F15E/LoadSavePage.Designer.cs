@@ -117,7 +117,7 @@ namespace DTC.UI.Aircrafts.F15E
             // 
             chkLoadRadios.Enabled = false;
             chkLoadRadios.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            chkLoadRadios.Location = new Point(27, 122);
+            chkLoadRadios.Location = new Point(27, 105);
             chkLoadRadios.Name = "chkLoadRadios";
             chkLoadRadios.Size = new Size(102, 25);
             chkLoadRadios.TabIndex = 1;
@@ -128,7 +128,7 @@ namespace DTC.UI.Aircrafts.F15E
             // 
             chkLoadMisc.Enabled = false;
             chkLoadMisc.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            chkLoadMisc.Location = new Point(27, 147);
+            chkLoadMisc.Location = new Point(27, 136);
             chkLoadMisc.Name = "chkLoadMisc";
             chkLoadMisc.Size = new Size(102, 25);
             chkLoadMisc.TabIndex = 1;
@@ -139,10 +139,9 @@ namespace DTC.UI.Aircrafts.F15E
             // 
             chkLoadDisplays.Enabled = false;
             chkLoadDisplays.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            chkLoadDisplays.Location = new Point(27, 140);
-            chkLoadDisplays.Margin = new Padding(4, 5, 4, 5);
+            chkLoadDisplays.Location = new Point(27, 167);
             chkLoadDisplays.Name = "chkLoadDisplays";
-            chkLoadDisplays.Size = new Size(153, 38);
+            chkLoadDisplays.Size = new Size(102, 25);
             chkLoadDisplays.TabIndex = 1;
             chkLoadDisplays.Text = "Displays";
             chkLoadDisplays.UseVisualStyleBackColor = true;
@@ -154,7 +153,7 @@ namespace DTC.UI.Aircrafts.F15E
             btnLoadApply.FlatAppearance.BorderSize = 0;
             btnLoadApply.FlatStyle = FlatStyle.Flat;
             btnLoadApply.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLoadApply.Location = new Point(27, 209);
+            btnLoadApply.Location = new Point(27, 225);
             btnLoadApply.Margin = new Padding(4, 5, 4, 5);
             btnLoadApply.Name = "btnLoadApply";
             btnLoadApply.Size = new Size(161, 34);
@@ -169,7 +168,7 @@ namespace DTC.UI.Aircrafts.F15E
             btnLoad.FlatAppearance.BorderSize = 0;
             btnLoad.FlatStyle = FlatStyle.Flat;
             btnLoad.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnLoad.Location = new Point(27, 46);
+            btnLoad.Location = new Point(27, 26);
             btnLoad.Margin = new Padding(4, 5, 4, 5);
             btnLoad.Name = "btnLoad";
             btnLoad.Size = new Size(161, 36);
@@ -182,7 +181,7 @@ namespace DTC.UI.Aircrafts.F15E
             // 
             chkLoadWaypoints.Enabled = false;
             chkLoadWaypoints.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            chkLoadWaypoints.Location = new Point(27, 92);
+            chkLoadWaypoints.Location = new Point(27, 69);
             chkLoadWaypoints.Margin = new Padding(4, 5, 4, 5);
             chkLoadWaypoints.Name = "chkLoadWaypoints";
             chkLoadWaypoints.Size = new Size(153, 38);
@@ -202,7 +201,7 @@ namespace DTC.UI.Aircrafts.F15E
             grpSave.Controls.Add(chkSaveWaypoints);
             grpSave.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
             grpSave.LabelIndent = 10;
-            grpSave.Location = new Point(275, 77);
+            grpSave.Location = new Point(272, 77);
             grpSave.Margin = new Padding(4, 5, 4, 5);
             grpSave.Name = "grpSave";
             grpSave.Padding = new Padding(4, 5, 4, 5);
@@ -211,13 +210,14 @@ namespace DTC.UI.Aircrafts.F15E
             grpSave.TabStop = false;
             grpSave.Text = "Save";
             grpSave.Visible = false;
+            grpSave.Enter += grpSave_Enter;
             // 
             // chkSaveRadios
             // 
             chkSaveRadios.Checked = true;
             chkSaveRadios.CheckState = CheckState.Checked;
             chkSaveRadios.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            chkSaveRadios.Location = new Point(27, 122);
+            chkSaveRadios.Location = new Point(27, 105);
             chkSaveRadios.Name = "chkSaveRadios";
             chkSaveRadios.Size = new Size(102, 25);
             chkSaveRadios.TabIndex = 1;
@@ -229,7 +229,7 @@ namespace DTC.UI.Aircrafts.F15E
             chkSaveMisc.Checked = true;
             chkSaveMisc.CheckState = CheckState.Checked;
             chkSaveMisc.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            chkSaveMisc.Location = new Point(27, 147);
+            chkSaveMisc.Location = new Point(27, 136);
             chkSaveMisc.Name = "chkSaveMisc";
             chkSaveMisc.Size = new Size(102, 25);
             chkSaveMisc.TabIndex = 1;
@@ -241,7 +241,7 @@ namespace DTC.UI.Aircrafts.F15E
             chkSaveDisplays.Checked = true;
             chkSaveDisplays.CheckState = CheckState.Checked;
             chkSaveDisplays.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            chkSaveDisplays.Location = new Point(27, 140);
+            chkSaveDisplays.Location = new Point(27, 160);
             chkSaveDisplays.Margin = new Padding(4, 5, 4, 5);
             chkSaveDisplays.Name = "chkSaveDisplays";
             chkSaveDisplays.Size = new Size(153, 38);
@@ -269,7 +269,7 @@ namespace DTC.UI.Aircrafts.F15E
             chkSaveWaypoints.Checked = true;
             chkSaveWaypoints.CheckState = CheckState.Checked;
             chkSaveWaypoints.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            chkSaveWaypoints.Location = new Point(27, 92);
+            chkSaveWaypoints.Location = new Point(27, 69);
             chkSaveWaypoints.Margin = new Padding(4, 5, 4, 5);
             chkSaveWaypoints.Name = "chkSaveWaypoints";
             chkSaveWaypoints.Size = new Size(153, 38);

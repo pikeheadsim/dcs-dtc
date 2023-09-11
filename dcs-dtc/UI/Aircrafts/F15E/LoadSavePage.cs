@@ -210,5 +210,10 @@ namespace DTC.UI.Aircrafts.F15E
             grpSave.Visible = false;
             DisableLoadControls();
         }
+
+        private void grpSave_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
