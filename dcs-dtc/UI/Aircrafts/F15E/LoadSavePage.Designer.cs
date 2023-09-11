@@ -327,11 +327,11 @@ namespace DTC.UI.Aircrafts.F15E
         private System.Windows.Forms.SaveFileDialog saveFileDlg;
         private System.Windows.Forms.RadioButton optFile;
         private System.Windows.Forms.RadioButton optClipboard;
-        private Controls.DTCGroupBox grpLoad;
+        private Base.Controls.DTCGroupBox grpLoad;
         private DTCButton btnLoadApply;
         private DTCButton btnLoad;
         private System.Windows.Forms.CheckBox chkLoadWaypoints;
-        private Controls.DTCGroupBox grpSave;
+        private Base.Controls.DTCGroupBox grpSave;
         private DTCButton btnSave;
         private System.Windows.Forms.CheckBox chkSaveWaypoints;
         private System.Windows.Forms.CheckBox checkBox1;
